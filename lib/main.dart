@@ -1,9 +1,17 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:test/presentation/video_player_page.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:test/application/bloc/user_bloc.dart';
+import 'package:test/presentation/home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MultiBlocProvider(
+    providers: [
+      BlocProvider(
+        create: (context) => UserBloc(),
+      ),
+    ],
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -11,9 +19,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: VideoPlayerPage(),
+      home: HomePage(),
     );
   }
 }

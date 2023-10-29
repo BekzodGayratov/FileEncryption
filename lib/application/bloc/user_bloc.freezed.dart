@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'video_player_cubit.dart';
+part of 'user_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,14 +15,276 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$VideoPlayerState {
+mixin _$UserEvent {
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function() getUsers,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? started,
+    TResult? Function()? getUsers,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function()? getUsers,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(_GetUsers value) getUsers,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Started value)? started,
+    TResult? Function(_GetUsers value)? getUsers,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_GetUsers value)? getUsers,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $UserEventCopyWith<$Res> {
+  factory $UserEventCopyWith(UserEvent value, $Res Function(UserEvent) then) =
+      _$UserEventCopyWithImpl<$Res, UserEvent>;
+}
+
+/// @nodoc
+class _$UserEventCopyWithImpl<$Res, $Val extends UserEvent>
+    implements $UserEventCopyWith<$Res> {
+  _$UserEventCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+}
+
+/// @nodoc
+abstract class _$$StartedImplCopyWith<$Res> {
+  factory _$$StartedImplCopyWith(
+          _$StartedImpl value, $Res Function(_$StartedImpl) then) =
+      __$$StartedImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$StartedImplCopyWithImpl<$Res>
+    extends _$UserEventCopyWithImpl<$Res, _$StartedImpl>
+    implements _$$StartedImplCopyWith<$Res> {
+  __$$StartedImplCopyWithImpl(
+      _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$StartedImpl implements _Started {
+  const _$StartedImpl();
+
+  @override
+  String toString() {
+    return 'UserEvent.started()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$StartedImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function() getUsers,
+  }) {
+    return started();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? started,
+    TResult? Function()? getUsers,
+  }) {
+    return started?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function()? getUsers,
+    required TResult orElse(),
+  }) {
+    if (started != null) {
+      return started();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(_GetUsers value) getUsers,
+  }) {
+    return started(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Started value)? started,
+    TResult? Function(_GetUsers value)? getUsers,
+  }) {
+    return started?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_GetUsers value)? getUsers,
+    required TResult orElse(),
+  }) {
+    if (started != null) {
+      return started(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _Started implements UserEvent {
+  const factory _Started() = _$StartedImpl;
+}
+
+/// @nodoc
+abstract class _$$GetUsersImplCopyWith<$Res> {
+  factory _$$GetUsersImplCopyWith(
+          _$GetUsersImpl value, $Res Function(_$GetUsersImpl) then) =
+      __$$GetUsersImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$GetUsersImplCopyWithImpl<$Res>
+    extends _$UserEventCopyWithImpl<$Res, _$GetUsersImpl>
+    implements _$$GetUsersImplCopyWith<$Res> {
+  __$$GetUsersImplCopyWithImpl(
+      _$GetUsersImpl _value, $Res Function(_$GetUsersImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$GetUsersImpl implements _GetUsers {
+  const _$GetUsersImpl();
+
+  @override
+  String toString() {
+    return 'UserEvent.getUsers()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$GetUsersImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function() getUsers,
+  }) {
+    return getUsers();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? started,
+    TResult? Function()? getUsers,
+  }) {
+    return getUsers?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function()? getUsers,
+    required TResult orElse(),
+  }) {
+    if (getUsers != null) {
+      return getUsers();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(_GetUsers value) getUsers,
+  }) {
+    return getUsers(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Started value)? started,
+    TResult? Function(_GetUsers value)? getUsers,
+  }) {
+    return getUsers?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_GetUsers value)? getUsers,
+    required TResult orElse(),
+  }) {
+    if (getUsers != null) {
+      return getUsers(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GetUsers implements UserEvent {
+  const factory _GetUsers() = _$GetUsersImpl;
+}
+
+/// @nodoc
+mixin _$UserState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String err) error,
-    required TResult Function(BetterPlayerController playerController)
-        completed,
+    required TResult Function(List<UserModel> data) success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -30,7 +292,7 @@ mixin _$VideoPlayerState {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String err)? error,
-    TResult? Function(BetterPlayerController playerController)? completed,
+    TResult? Function(List<UserModel> data)? success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -38,7 +300,7 @@ mixin _$VideoPlayerState {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String err)? error,
-    TResult Function(BetterPlayerController playerController)? completed,
+    TResult Function(List<UserModel> data)? success,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -47,7 +309,7 @@ mixin _$VideoPlayerState {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Error value) error,
-    required TResult Function(_Completed value) completed,
+    required TResult Function(_Success value) success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -55,7 +317,7 @@ mixin _$VideoPlayerState {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Completed value)? completed,
+    TResult? Function(_Success value)? success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -63,23 +325,22 @@ mixin _$VideoPlayerState {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Error value)? error,
-    TResult Function(_Completed value)? completed,
+    TResult Function(_Success value)? success,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $VideoPlayerStateCopyWith<$Res> {
-  factory $VideoPlayerStateCopyWith(
-          VideoPlayerState value, $Res Function(VideoPlayerState) then) =
-      _$VideoPlayerStateCopyWithImpl<$Res, VideoPlayerState>;
+abstract class $UserStateCopyWith<$Res> {
+  factory $UserStateCopyWith(UserState value, $Res Function(UserState) then) =
+      _$UserStateCopyWithImpl<$Res, UserState>;
 }
 
 /// @nodoc
-class _$VideoPlayerStateCopyWithImpl<$Res, $Val extends VideoPlayerState>
-    implements $VideoPlayerStateCopyWith<$Res> {
-  _$VideoPlayerStateCopyWithImpl(this._value, this._then);
+class _$UserStateCopyWithImpl<$Res, $Val extends UserState>
+    implements $UserStateCopyWith<$Res> {
+  _$UserStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -96,7 +357,7 @@ abstract class _$$InitialImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<$Res>
-    extends _$VideoPlayerStateCopyWithImpl<$Res, _$InitialImpl>
+    extends _$UserStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
@@ -110,7 +371,7 @@ class _$InitialImpl implements _Initial {
 
   @override
   String toString() {
-    return 'VideoPlayerState.initial()';
+    return 'UserState.initial()';
   }
 
   @override
@@ -128,8 +389,7 @@ class _$InitialImpl implements _Initial {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String err) error,
-    required TResult Function(BetterPlayerController playerController)
-        completed,
+    required TResult Function(List<UserModel> data) success,
   }) {
     return initial();
   }
@@ -140,7 +400,7 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String err)? error,
-    TResult? Function(BetterPlayerController playerController)? completed,
+    TResult? Function(List<UserModel> data)? success,
   }) {
     return initial?.call();
   }
@@ -151,7 +411,7 @@ class _$InitialImpl implements _Initial {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String err)? error,
-    TResult Function(BetterPlayerController playerController)? completed,
+    TResult Function(List<UserModel> data)? success,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -166,7 +426,7 @@ class _$InitialImpl implements _Initial {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Error value) error,
-    required TResult Function(_Completed value) completed,
+    required TResult Function(_Success value) success,
   }) {
     return initial(this);
   }
@@ -177,7 +437,7 @@ class _$InitialImpl implements _Initial {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Completed value)? completed,
+    TResult? Function(_Success value)? success,
   }) {
     return initial?.call(this);
   }
@@ -188,7 +448,7 @@ class _$InitialImpl implements _Initial {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Error value)? error,
-    TResult Function(_Completed value)? completed,
+    TResult Function(_Success value)? success,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -198,7 +458,7 @@ class _$InitialImpl implements _Initial {
   }
 }
 
-abstract class _Initial implements VideoPlayerState {
+abstract class _Initial implements UserState {
   const factory _Initial() = _$InitialImpl;
 }
 
@@ -211,7 +471,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$LoadingImplCopyWithImpl<$Res>
-    extends _$VideoPlayerStateCopyWithImpl<$Res, _$LoadingImpl>
+    extends _$UserStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
@@ -225,7 +485,7 @@ class _$LoadingImpl implements _Loading {
 
   @override
   String toString() {
-    return 'VideoPlayerState.loading()';
+    return 'UserState.loading()';
   }
 
   @override
@@ -243,8 +503,7 @@ class _$LoadingImpl implements _Loading {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String err) error,
-    required TResult Function(BetterPlayerController playerController)
-        completed,
+    required TResult Function(List<UserModel> data) success,
   }) {
     return loading();
   }
@@ -255,7 +514,7 @@ class _$LoadingImpl implements _Loading {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String err)? error,
-    TResult? Function(BetterPlayerController playerController)? completed,
+    TResult? Function(List<UserModel> data)? success,
   }) {
     return loading?.call();
   }
@@ -266,7 +525,7 @@ class _$LoadingImpl implements _Loading {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String err)? error,
-    TResult Function(BetterPlayerController playerController)? completed,
+    TResult Function(List<UserModel> data)? success,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -281,7 +540,7 @@ class _$LoadingImpl implements _Loading {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Error value) error,
-    required TResult Function(_Completed value) completed,
+    required TResult Function(_Success value) success,
   }) {
     return loading(this);
   }
@@ -292,7 +551,7 @@ class _$LoadingImpl implements _Loading {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Completed value)? completed,
+    TResult? Function(_Success value)? success,
   }) {
     return loading?.call(this);
   }
@@ -303,7 +562,7 @@ class _$LoadingImpl implements _Loading {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Error value)? error,
-    TResult Function(_Completed value)? completed,
+    TResult Function(_Success value)? success,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -313,7 +572,7 @@ class _$LoadingImpl implements _Loading {
   }
 }
 
-abstract class _Loading implements VideoPlayerState {
+abstract class _Loading implements UserState {
   const factory _Loading() = _$LoadingImpl;
 }
 
@@ -328,7 +587,7 @@ abstract class _$$ErrorImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$ErrorImplCopyWithImpl<$Res>
-    extends _$VideoPlayerStateCopyWithImpl<$Res, _$ErrorImpl>
+    extends _$UserStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
@@ -358,7 +617,7 @@ class _$ErrorImpl implements _Error {
 
   @override
   String toString() {
-    return 'VideoPlayerState.error(err: $err)';
+    return 'UserState.error(err: $err)';
   }
 
   @override
@@ -384,8 +643,7 @@ class _$ErrorImpl implements _Error {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String err) error,
-    required TResult Function(BetterPlayerController playerController)
-        completed,
+    required TResult Function(List<UserModel> data) success,
   }) {
     return error(err);
   }
@@ -396,7 +654,7 @@ class _$ErrorImpl implements _Error {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String err)? error,
-    TResult? Function(BetterPlayerController playerController)? completed,
+    TResult? Function(List<UserModel> data)? success,
   }) {
     return error?.call(err);
   }
@@ -407,7 +665,7 @@ class _$ErrorImpl implements _Error {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String err)? error,
-    TResult Function(BetterPlayerController playerController)? completed,
+    TResult Function(List<UserModel> data)? success,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -422,7 +680,7 @@ class _$ErrorImpl implements _Error {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Error value) error,
-    required TResult Function(_Completed value) completed,
+    required TResult Function(_Success value) success,
   }) {
     return error(this);
   }
@@ -433,7 +691,7 @@ class _$ErrorImpl implements _Error {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Completed value)? completed,
+    TResult? Function(_Success value)? success,
   }) {
     return error?.call(this);
   }
@@ -444,7 +702,7 @@ class _$ErrorImpl implements _Error {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Error value)? error,
-    TResult Function(_Completed value)? completed,
+    TResult Function(_Success value)? success,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -454,7 +712,7 @@ class _$ErrorImpl implements _Error {
   }
 }
 
-abstract class _Error implements VideoPlayerState {
+abstract class _Error implements UserState {
   const factory _Error(final String err) = _$ErrorImpl;
 
   String get err;
@@ -464,66 +722,71 @@ abstract class _Error implements VideoPlayerState {
 }
 
 /// @nodoc
-abstract class _$$CompletedImplCopyWith<$Res> {
-  factory _$$CompletedImplCopyWith(
-          _$CompletedImpl value, $Res Function(_$CompletedImpl) then) =
-      __$$CompletedImplCopyWithImpl<$Res>;
+abstract class _$$SuccessImplCopyWith<$Res> {
+  factory _$$SuccessImplCopyWith(
+          _$SuccessImpl value, $Res Function(_$SuccessImpl) then) =
+      __$$SuccessImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({BetterPlayerController playerController});
+  $Res call({List<UserModel> data});
 }
 
 /// @nodoc
-class __$$CompletedImplCopyWithImpl<$Res>
-    extends _$VideoPlayerStateCopyWithImpl<$Res, _$CompletedImpl>
-    implements _$$CompletedImplCopyWith<$Res> {
-  __$$CompletedImplCopyWithImpl(
-      _$CompletedImpl _value, $Res Function(_$CompletedImpl) _then)
+class __$$SuccessImplCopyWithImpl<$Res>
+    extends _$UserStateCopyWithImpl<$Res, _$SuccessImpl>
+    implements _$$SuccessImplCopyWith<$Res> {
+  __$$SuccessImplCopyWithImpl(
+      _$SuccessImpl _value, $Res Function(_$SuccessImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? playerController = null,
+    Object? data = null,
   }) {
-    return _then(_$CompletedImpl(
-      null == playerController
-          ? _value.playerController
-          : playerController // ignore: cast_nullable_to_non_nullable
-              as BetterPlayerController,
+    return _then(_$SuccessImpl(
+      null == data
+          ? _value._data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<UserModel>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$CompletedImpl implements _Completed {
-  const _$CompletedImpl(this.playerController);
+class _$SuccessImpl implements _Success {
+  const _$SuccessImpl(final List<UserModel> data) : _data = data;
 
+  final List<UserModel> _data;
   @override
-  final BetterPlayerController playerController;
+  List<UserModel> get data {
+    if (_data is EqualUnmodifiableListView) return _data;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_data);
+  }
 
   @override
   String toString() {
-    return 'VideoPlayerState.completed(playerController: $playerController)';
+    return 'UserState.success(data: $data)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CompletedImpl &&
-            (identical(other.playerController, playerController) ||
-                other.playerController == playerController));
+            other is _$SuccessImpl &&
+            const DeepCollectionEquality().equals(other._data, _data));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, playerController);
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_data));
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$CompletedImplCopyWith<_$CompletedImpl> get copyWith =>
-      __$$CompletedImplCopyWithImpl<_$CompletedImpl>(this, _$identity);
+  _$$SuccessImplCopyWith<_$SuccessImpl> get copyWith =>
+      __$$SuccessImplCopyWithImpl<_$SuccessImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -531,10 +794,9 @@ class _$CompletedImpl implements _Completed {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String err) error,
-    required TResult Function(BetterPlayerController playerController)
-        completed,
+    required TResult Function(List<UserModel> data) success,
   }) {
-    return completed(playerController);
+    return success(data);
   }
 
   @override
@@ -543,9 +805,9 @@ class _$CompletedImpl implements _Completed {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String err)? error,
-    TResult? Function(BetterPlayerController playerController)? completed,
+    TResult? Function(List<UserModel> data)? success,
   }) {
-    return completed?.call(playerController);
+    return success?.call(data);
   }
 
   @override
@@ -554,11 +816,11 @@ class _$CompletedImpl implements _Completed {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String err)? error,
-    TResult Function(BetterPlayerController playerController)? completed,
+    TResult Function(List<UserModel> data)? success,
     required TResult orElse(),
   }) {
-    if (completed != null) {
-      return completed(playerController);
+    if (success != null) {
+      return success(data);
     }
     return orElse();
   }
@@ -569,9 +831,9 @@ class _$CompletedImpl implements _Completed {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Error value) error,
-    required TResult Function(_Completed value) completed,
+    required TResult Function(_Success value) success,
   }) {
-    return completed(this);
+    return success(this);
   }
 
   @override
@@ -580,9 +842,9 @@ class _$CompletedImpl implements _Completed {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Completed value)? completed,
+    TResult? Function(_Success value)? success,
   }) {
-    return completed?.call(this);
+    return success?.call(this);
   }
 
   @override
@@ -591,22 +853,21 @@ class _$CompletedImpl implements _Completed {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Error value)? error,
-    TResult Function(_Completed value)? completed,
+    TResult Function(_Success value)? success,
     required TResult orElse(),
   }) {
-    if (completed != null) {
-      return completed(this);
+    if (success != null) {
+      return success(this);
     }
     return orElse();
   }
 }
 
-abstract class _Completed implements VideoPlayerState {
-  const factory _Completed(final BetterPlayerController playerController) =
-      _$CompletedImpl;
+abstract class _Success implements UserState {
+  const factory _Success(final List<UserModel> data) = _$SuccessImpl;
 
-  BetterPlayerController get playerController;
+  List<UserModel> get data;
   @JsonKey(ignore: true)
-  _$$CompletedImplCopyWith<_$CompletedImpl> get copyWith =>
+  _$$SuccessImplCopyWith<_$SuccessImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
